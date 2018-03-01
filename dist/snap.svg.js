@@ -2174,7 +2174,7 @@ function add2group(list) {
     return this;
 }
 // Hub garbage collector every 10s
-setInterval(function () {
+window.setInterval(function () {
     for (var key in hub) if (hub[has](key)) {
         var el = hub[key],
             node = el.node;
